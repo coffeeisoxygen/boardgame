@@ -3,6 +3,7 @@ package com.coffeeisoxygen.model.templates;
 import com.coffeeisoxygen.model.classes.Point;
 import com.coffeeisoxygen.model.enumerate.TileType;
 import com.coffeeisoxygen.model.factory.ITileFactory;
+import com.coffeeisoxygen.model.helpers.TileHelper;
 import com.coffeeisoxygen.model.interfaces.IBoardTemplate;
 import com.coffeeisoxygen.model.interfaces.ITile;
 
@@ -26,31 +27,23 @@ public class SecondTemplate implements IBoardTemplate {
     private void setDefaultTiles(ITileFactory factory, ITile[][] tiles) {
         for (int y = 0; y < HEIGHT; y++) {
             for (int x = 0; x < WIDTH; x++) {
-                tiles[y][x] = factory.createTile(TileType.NORMALPOINTTILE, new Point(x, y));
+                tiles[y][x] = factory.createTile(TileType.NORMALPOINTTILE, Point.of(x, y));
             }
         }
     }
 
     private void setSpecialTiles(ITileFactory factory, ITile[][] tiles) {
         // Start & Finish
-        tiles[0][0] = factory.createTile(TileType.STARTPOINTTILE, new Point(0, 0));
-        tiles[HEIGHT - 1][WIDTH - 1] = factory.createTile(TileType.FINISHPOINTTILE, new Point(WIDTH - 1, HEIGHT - 1));
+        tiles[0][0] = factory.createTile(TileType.STARTPOINTTILE, Point.of(0, 0));
+        tiles[HEIGHT - 1][WIDTH - 1] = factory.createTile(TileType.FINISHPOINTTILE, Point.of(WIDTH - 1, HEIGHT - 1));
 
         // Danger Tiles
         int[][] dangerPoints = { { 0, 1 }, { 0, 2 }, { 0, 3 }, { 0, 4 }, { 0, 5 }, { 0, 6 } };
-        setTileType(factory, tiles, dangerPoints, TileType.DANGERPOINTTILE);
+        TileHelper.setTileType(factory, tiles, dangerPoints, TileType.DANGERPOINTTILE);
 
         // Safe Tiles
         int[][] checkpointPoints = { { 2, 3 }, { 7, 7 } };
-        setTileType(factory, tiles, checkpointPoints, TileType.CHECKPOINTTILE);
-    }
-
-    private void setTileType(ITileFactory factory, ITile[][] tiles, int[][] points, TileType type) {
-        for (int[] point : points) {
-            int x = point[1];
-            int y = point[0];
-            tiles[y][x] = factory.createTile(type, new Point(x, y));
-        }
+        TileHelper.setTileType(factory, tiles, checkpointPoints, TileType.CHECKPOINTTILE);
     }
 
     @Override

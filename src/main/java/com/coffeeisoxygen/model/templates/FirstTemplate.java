@@ -3,6 +3,7 @@ package com.coffeeisoxygen.model.templates;
 import com.coffeeisoxygen.model.classes.Point;
 import com.coffeeisoxygen.model.enumerate.TileType;
 import com.coffeeisoxygen.model.factory.ITileFactory;
+import com.coffeeisoxygen.model.helpers.TileHelper;
 import com.coffeeisoxygen.model.interfaces.IBoardTemplate;
 import com.coffeeisoxygen.model.interfaces.ITile;
 
@@ -16,68 +17,36 @@ public class FirstTemplate implements IBoardTemplate {
     public ITile[][] generateTemplate(ITileFactory factory) {
         ITile[][] tiles = new ITile[HEIGHT][WIDTH];
 
-        // Generate base tiles
-        for (int y = 0; y < HEIGHT; y++) {
-            for (int x = 0; x < WIDTH; x++) {
-                TileType type = TileType.NORMALPOINTTILE; // Default tile
-                tiles[y][x] = factory.createTile(type, new Point(x, y));
-            }
-        }
-
-        // Set Start Point
-        tiles[0][0] = factory.createTile(TileType.STARTPOINTTILE, new Point(0, 0));
-
-        // Set Finish Point
-        tiles[HEIGHT - 1][WIDTH - 1] = factory.createTile(TileType.FINISHPOINTTILE, new Point(WIDTH - 1, HEIGHT - 1));
-
-        // first row
-        tiles[0][1] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 1));
-        tiles[0][2] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 2));
-        tiles[0][3] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 3));
-        tiles[0][0] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 4));
-        tiles[0][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 5));
-        tiles[0][6] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 6));
-        tiles[0][7] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 7));
-        tiles[0][8] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 8));
-        // second row
-        tiles[1][1] = factory.createTile(TileType.DANGERPOINTTILE, new Point(1, 1));
-        tiles[1][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(1, 5));
-        tiles[1][6] = factory.createTile(TileType.DANGERPOINTTILE, new Point(1, 6));
-        tiles[1][8] = factory.createTile(TileType.DANGERPOINTTILE, new Point(1, 8));
-        tiles[1][10] = factory.createTile(TileType.DANGERPOINTTILE, new Point(1, 10));
-        // third row
-        tiles[2][1] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 1));
-        tiles[2][2] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 2));
-        tiles[2][3] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 3));
-        tiles[2][10] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 10));
-        // fourth row
-        tiles[3][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(3, 5));
-        tiles[3][8] = factory.createTile(TileType.DANGERPOINTTILE, new Point(3, 8));
-        tiles[3][9] = factory.createTile(TileType.DANGERPOINTTILE, new Point(3, 9));
-        tiles[3][10] = factory.createTile(TileType.DANGERPOINTTILE, new Point(3, 10));
-        // fifth row
-        tiles[4][2] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 2));
-        tiles[4][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 5));
-        tiles[4][7] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 7));
-        tiles[4][8] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 8));
-        tiles[4][9] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 9));
-        tiles[4][10] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 10));
-        // sixth row
-        tiles[5][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(5, 5));
-
-        // second row
-        tiles[1][7] = factory.createTile(TileType.CHECKPOINTTILE, new Point(1, 7));
-        // third row
-        tiles[2][5] = factory.createTile(TileType.CHECKPOINTTILE, new Point(2, 5));
-        // fourth row
-        tiles[3][1] = factory.createTile(TileType.CHECKPOINTTILE, new Point(3, 1));
-        // fifth row
-        tiles[4][6] = factory.createTile(TileType.CHECKPOINTTILE, new Point(4, 6));
-        // sixth row
-        tiles[5][0] = factory.createTile(TileType.CHECKPOINTTILE, new Point(5, 0));
-        tiles[5][1] = factory.createTile(TileType.CHECKPOINTTILE, new Point(5, 1));
+        // Helper untuk set tile
+        setDefaultTiles(factory, tiles);
+        setSpecialTiles(factory, tiles);
 
         return tiles;
+    }
+
+    private void setDefaultTiles(ITileFactory factory, ITile[][] tiles) {
+        for (int y = 0; y < HEIGHT; y++) {
+            for (int x = 0; x < WIDTH; x++) {
+                tiles[y][x] = factory.createTile(TileType.NORMALPOINTTILE, Point.of(x, y));
+            }
+        }
+    }
+
+    private void setSpecialTiles(ITileFactory factory, ITile[][] tiles) {
+        // Danger Tiles
+        int[][] dangerPoints = {
+                { 2, 1 }, { 2, 2 }, { 2, 3 }, { 2, 10 },
+                { 3, 5 }, { 3, 8 }, { 3, 9 }, { 3, 10 },
+                { 4, 2 }, { 4, 5 }, { 4, 7 }, { 4, 8 }, { 4, 9 }, { 4, 10 },
+                { 5, 5 }
+        };
+        TileHelper.setTileType(factory, tiles, dangerPoints, TileType.DANGERPOINTTILE);
+
+        // Safe Tiles
+        int[][] checkpointPoints = {
+                { 1, 7 }, { 2, 5 }, { 3, 1 }, { 4, 6 }, { 5, 0 }
+        };
+        TileHelper.setTileType(factory, tiles, checkpointPoints, TileType.CHECKPOINTTILE);
     }
 
     @Override
