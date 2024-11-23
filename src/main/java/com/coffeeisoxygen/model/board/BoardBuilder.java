@@ -1,60 +1,45 @@
 package com.coffeeisoxygen.model.board;
 
-import com.coffeeisoxygen.model.classes.Point;
-import com.coffeeisoxygen.model.enumerate.TileType;
-import com.coffeeisoxygen.model.factory.TileFactory;
+import com.coffeeisoxygen.model.factory.ITileFactory;
 import com.coffeeisoxygen.model.interfaces.IBoard;
+import com.coffeeisoxygen.model.interfaces.IBoardTemplate;
 import com.coffeeisoxygen.model.interfaces.ITile;
+import com.coffeeisoxygen.model.templates.DefaultTemplate;
 
 public class BoardBuilder {
-    // Default values
-    int width = 10;
-    int height = 10;
+    int width;
+    int height;
     ITile[][] tiles;
-    String name = "Default Board";
+    String name;
 
-    // Set ukuran board
     public BoardBuilder setSize(int width, int height) {
         this.width = width;
         this.height = height;
-        return this; 
+        return this;
     }
 
-    // Set nama board
     public BoardBuilder setName(String name) {
         this.name = name;
         return this;
     }
 
-    // Set tiles custom (optional)
-    public BoardBuilder setTiles(ITile[][] customTiles) {
-        this.tiles = customTiles;
+    public BoardBuilder setTemplate(IBoardTemplate template, ITileFactory factory) {
+        this.width = template.getWidth();
+        this.height = template.getHeight();
+        this.tiles = template.generateTemplate(factory);
+        this.name = template.getName();
         return this;
     }
 
-    // Generate default tiles jika tiles belum di-set
-    private void generateDefaultTiles(TileFactory factory) {
-        this.tiles = new ITile[height][width];
-        for (int y = 0; y < height; y++) {
-            for (int x = 0; x < width; x++) {
-                this.tiles[y][x] = factory.createTile(TileType.NORMALPOINTTILE, new Point(x, y));
-                // set at the last row and column
-                if (x == width - 1 && y == height - 1) {
-                    this.tiles[y][x] = factory.createTile(TileType.STARTPOINTTILE, new Point(x, y));
-                // set at the first row and column
-                } else if (x == 0 && y == 0) {
-                    this.tiles[y][x] = factory.createTile(TileType.FINISHPOINTTILE, new Point(x, y));
-                }
-            }
-        }
+    public BoardBuilder createDefaultTemplate(ITileFactory factory) {
+        IBoardTemplate defaultTemplate = new DefaultTemplate(width, height, name);
+        return setTemplate(defaultTemplate, factory);
     }
 
-    // Build Board
-    public IBoard build(TileFactory factory) {
+    public IBoard build(ITileFactory factory) {
         if (tiles == null) {
-            generateDefaultTiles(factory); // Buat default tiles
+            createDefaultTemplate(factory);
         }
-        return new Board(this); // Pass ke Board
+        return new Board(this);
     }
 }
-

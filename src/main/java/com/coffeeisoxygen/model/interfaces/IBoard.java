@@ -2,6 +2,7 @@ package com.coffeeisoxygen.model.interfaces;
 
 public interface IBoard {
 
+
     int getWidth();
 
     int getHeight();
