@@ -1,4 +1,4 @@
-package com.coffeeisoxygen.factory;
+package com.coffeeisoxygen.model.factory;
 
 import com.coffeeisoxygen.model.enumerate.TileType;
 import com.coffeeisoxygen.model.interfaces.IPoint;
@@ -14,7 +14,8 @@ public class TileFactory implements ITileFactory {
     private static final TileFactory instance = new TileFactory();
 
     // Private constructor
-    private TileFactory() { }
+    private TileFactory() {
+    }
 
     // Get Singleton instance
     public static TileFactory getInstance() {
@@ -24,18 +25,22 @@ public class TileFactory implements ITileFactory {
     @Override
     public ITile createTile(TileType type, IPoint position) {
         switch (type) {
-            case NORMALPOINTTILE:
+            case NORMALPOINTTILE -> {
                 return new TileNormalpoint(position);
-            case DANGERPOINTTILE:
+            }
+            case DANGERPOINTTILE -> {
                 return new TileDangerpoint(position);
-            case CHECKPOINTTILE:
+            }
+            case CHECKPOINTTILE -> {
                 return new TileCheckpoint(position);
-            case STARTPOINTTILE:
+            }
+            case STARTPOINTTILE -> {
                 return new TileStartpoint(position);
-            case FINISHPOINTTILE:
+            }
+            case FINISHPOINTTILE -> {
                 return new TileFinishpoint(position);
-            default:
-                throw new IllegalArgumentException("Unknown TileType: " + type);
+            }
+            default -> throw new IllegalArgumentException("Unknown TileType: " + type);
         }
     }
 }

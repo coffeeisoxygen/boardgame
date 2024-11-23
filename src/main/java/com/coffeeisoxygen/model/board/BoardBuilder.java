@@ -1,8 +1,8 @@
 package com.coffeeisoxygen.model.board;
 
-import com.coffeeisoxygen.factory.TileFactory;
 import com.coffeeisoxygen.model.classes.Point;
 import com.coffeeisoxygen.model.enumerate.TileType;
+import com.coffeeisoxygen.model.factory.TileFactory;
 import com.coffeeisoxygen.model.interfaces.ITile;
 
 public class BoardBuilder {

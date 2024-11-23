@@ -1,8 +1,8 @@
 package com.coffeeisoxygen;
 
-import com.coffeeisoxygen.factory.TileFactory;
 import com.coffeeisoxygen.model.board.Board;
 import com.coffeeisoxygen.model.board.BoardBuilder;
+import com.coffeeisoxygen.model.factory.TileFactory;
 
 public class App {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.coffeeisoxygen.factory;
+package com.coffeeisoxygen.model.factory;
 
 import com.coffeeisoxygen.model.enumerate.TileType;
 import com.coffeeisoxygen.model.interfaces.IPoint;
