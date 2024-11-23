@@ -10,16 +10,32 @@ import com.coffeeisoxygen.model.tile.TileNormalpoint;
 import com.coffeeisoxygen.model.tile.TileStartpoint;
 
 public class TileFactory implements ITileFactory {
+    // Singleton instance
+    private static final TileFactory instance = new TileFactory();
+
+    // Private constructor
+    private TileFactory() { }
+
+    // Get Singleton instance
+    public static TileFactory getInstance() {
+        return instance;
+    }
 
     @Override
     public ITile createTile(TileType type, IPoint position) {
-        return switch (type) {
-            case STARTPOINTTILE -> new TileStartpoint(position);
-            case FINISHPOINTTILE -> new TileFinishpoint(position);
-            case CHECKPOINTTILE -> new TileCheckpoint(position);
-            case DANGERPOINTTILE -> new TileDangerpoint(position);
-            case NORMALPOINTTILE -> new TileNormalpoint(position);
-            default -> new TileNormalpoint(position);
-        };
+        switch (type) {
+            case NORMALPOINTTILE:
+                return new TileNormalpoint(position);
+            case DANGERPOINTTILE:
+                return new TileDangerpoint(position);
+            case CHECKPOINTTILE:
+                return new TileCheckpoint(position);
+            case STARTPOINTTILE:
+                return new TileStartpoint(position);
+            case FINISHPOINTTILE:
+                return new TileFinishpoint(position);
+            default:
+                throw new IllegalArgumentException("Unknown TileType: " + type);
+        }
     }
 }
