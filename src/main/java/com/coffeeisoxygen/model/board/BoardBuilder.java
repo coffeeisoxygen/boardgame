@@ -17,7 +17,7 @@ public class BoardBuilder {
     public BoardBuilder setSize(int width, int height) {
         this.width = width;
         this.height = height;
-        return this; // Fluent API
+        return this; 
     }
 
     // Set nama board

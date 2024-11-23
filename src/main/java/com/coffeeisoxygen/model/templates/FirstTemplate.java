@@ -30,17 +30,52 @@ public class FirstTemplate implements IBoardTemplate {
         // Set Finish Point
         tiles[HEIGHT - 1][WIDTH - 1] = factory.createTile(TileType.FINISHPOINTTILE, new Point(WIDTH - 1, HEIGHT - 1));
 
-        // Add Danger Tiles
-        tiles[0][1] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 3));
-        tiles[0][2] = factory.createTile(TileType.DANGERPOINTTILE, new Point(5, 5));
-        tiles[0][3] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 6));
-        tiles[0][4] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 3));
-        tiles[0][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(5, 5));
-        tiles[0][6] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 6));
+        // first row
+        tiles[0][1] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 1));
+        tiles[0][2] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 2));
+        tiles[0][3] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 3));
+        tiles[0][0] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 4));
+        tiles[0][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 5));
+        tiles[0][6] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 6));
+        tiles[0][7] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 7));
+        tiles[0][8] = factory.createTile(TileType.DANGERPOINTTILE, new Point(0, 8));
+        // second row
+        tiles[1][1] = factory.createTile(TileType.DANGERPOINTTILE, new Point(1, 1));
+        tiles[1][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(1, 5));
+        tiles[1][6] = factory.createTile(TileType.DANGERPOINTTILE, new Point(1, 6));
+        tiles[1][8] = factory.createTile(TileType.DANGERPOINTTILE, new Point(1, 8));
+        tiles[1][10] = factory.createTile(TileType.DANGERPOINTTILE, new Point(1, 10));
+        // third row
+        tiles[2][1] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 1));
+        tiles[2][2] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 2));
+        tiles[2][3] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 3));
+        tiles[2][10] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 10));
+        // fourth row
+        tiles[3][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(3, 5));
+        tiles[3][8] = factory.createTile(TileType.DANGERPOINTTILE, new Point(3, 8));
+        tiles[3][9] = factory.createTile(TileType.DANGERPOINTTILE, new Point(3, 9));
+        tiles[3][10] = factory.createTile(TileType.DANGERPOINTTILE, new Point(3, 10));
+        // fifth row
+        tiles[4][2] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 2));
+        tiles[4][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 5));
+        tiles[4][7] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 7));
+        tiles[4][8] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 8));
+        tiles[4][9] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 9));
+        tiles[4][10] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 10));
+        // sixth row
+        tiles[5][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(5, 5));
 
-        // Add Safe Tiles
-        tiles[2][3] = factory.createTile(TileType.CHECKPOINTTILE, new Point(3, 2));
-        tiles[7][7] = factory.createTile(TileType.CHECKPOINTTILE, new Point(7, 7));
+        // second row
+        tiles[1][7] = factory.createTile(TileType.CHECKPOINTTILE, new Point(1, 7));
+        // third row
+        tiles[2][5] = factory.createTile(TileType.CHECKPOINTTILE, new Point(2, 5));
+        // fourth row
+        tiles[3][1] = factory.createTile(TileType.CHECKPOINTTILE, new Point(3, 1));
+        // fifth row
+        tiles[4][6] = factory.createTile(TileType.CHECKPOINTTILE, new Point(4, 6));
+        // sixth row
+        tiles[5][0] = factory.createTile(TileType.CHECKPOINTTILE, new Point(5, 0));
+        tiles[5][1] = factory.createTile(TileType.CHECKPOINTTILE, new Point(5, 1));
 
         return tiles;
     }
