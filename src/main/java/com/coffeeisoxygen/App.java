@@ -47,20 +47,24 @@ public class App {
                     .build(factory);
         } else {
             board = new BoardBuilder()
-                    .setSize(15, 15)
+                    .setSize(10, 10) // Ensure the size is set for the default template
                     .setName("Default Game Board")
                     .build(factory);
         }
 
         // Access Board
         System.out.println("Board Name: " + board.getName());
-        System.out.println("Tile (0,0): " + board.getTile(0, 0).getName());
-        System.out.println("Tile (14,14): " + board.getTile(14, 14).getName());
+        System.out.println("Tile (0,0): " + board.getTile(0, 0).getType().name());
+
+        // Ensure we only access valid tile positions
+        int maxX = board.getWidth() - 1;
+        int maxY = board.getHeight() - 1;
+        System.out.println("Tile (" + maxX + "," + maxY + "): " + board.getTile(maxX, maxY).getType().name());
 
         // Test print all tiles
         for (int y = 0; y < board.getHeight(); y++) {
             for (int x = 0; x < board.getWidth(); x++) {
-                System.out.print(board.getTile(x, y).getName() + " ");
+                System.out.print(board.getTile(x, y).getType().name() + " ");
             }
             System.out.println();
         }
