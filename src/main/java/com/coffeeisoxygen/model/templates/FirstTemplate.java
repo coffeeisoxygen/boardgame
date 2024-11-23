@@ -6,11 +6,11 @@ import com.coffeeisoxygen.model.factory.ITileFactory;
 import com.coffeeisoxygen.model.interfaces.IBoardTemplate;
 import com.coffeeisoxygen.model.interfaces.ITile;
 
-public class SimpleTemplate implements IBoardTemplate {
+public class FirstTemplate implements IBoardTemplate {
 
     private static final int WIDTH = 12;
     private static final int HEIGHT = 6;
-    private static final String NAME = "Peta Dari Dosen";
+    private static final String NAME = "Peta Dari Ibu Shinta";
 
     @Override
     public ITile[][] generateTemplate(ITileFactory factory) {
@@ -31,9 +31,12 @@ public class SimpleTemplate implements IBoardTemplate {
         tiles[HEIGHT - 1][WIDTH - 1] = factory.createTile(TileType.FINISHPOINTTILE, new Point(WIDTH - 1, HEIGHT - 1));
 
         // Add Danger Tiles
-        tiles[3][4] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 3));
-        tiles[5][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(5, 5));
-        tiles[6][2] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 6));
+        tiles[0][1] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 3));
+        tiles[0][2] = factory.createTile(TileType.DANGERPOINTTILE, new Point(5, 5));
+        tiles[0][3] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 6));
+        tiles[0][4] = factory.createTile(TileType.DANGERPOINTTILE, new Point(4, 3));
+        tiles[0][5] = factory.createTile(TileType.DANGERPOINTTILE, new Point(5, 5));
+        tiles[0][6] = factory.createTile(TileType.DANGERPOINTTILE, new Point(2, 6));
 
         // Add Safe Tiles
         tiles[2][3] = factory.createTile(TileType.CHECKPOINTTILE, new Point(3, 2));
