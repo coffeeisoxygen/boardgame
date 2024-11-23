@@ -3,6 +3,7 @@ package com.coffeeisoxygen.model.board;
 import com.coffeeisoxygen.model.classes.Point;
 import com.coffeeisoxygen.model.enumerate.TileType;
 import com.coffeeisoxygen.model.factory.TileFactory;
+import com.coffeeisoxygen.model.interfaces.IBoard;
 import com.coffeeisoxygen.model.interfaces.ITile;
 
 public class BoardBuilder {
@@ -37,12 +38,19 @@ public class BoardBuilder {
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 this.tiles[y][x] = factory.createTile(TileType.NORMALPOINTTILE, new Point(x, y));
+                // set at the last row and column
+                if (x == width - 1 && y == height - 1) {
+                    this.tiles[y][x] = factory.createTile(TileType.STARTPOINTTILE, new Point(x, y));
+                // set at the first row and column
+                } else if (x == 0 && y == 0) {
+                    this.tiles[y][x] = factory.createTile(TileType.FINISHPOINTTILE, new Point(x, y));
+                }
             }
         }
     }
 
     // Build Board
-    public Board build(TileFactory factory) {
+    public IBoard build(TileFactory factory) {
         if (tiles == null) {
             generateDefaultTiles(factory); // Buat default tiles
         }

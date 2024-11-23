@@ -1,8 +1,9 @@
 package com.coffeeisoxygen.model.board;
 
+import com.coffeeisoxygen.model.interfaces.IBoard;
 import com.coffeeisoxygen.model.interfaces.ITile;
 
-public class Board {
+public class Board implements IBoard {
     private final int width;
     private final int height;
     private final ITile[][] tiles;
@@ -16,24 +17,28 @@ public class Board {
         this.name = builder.name;
     }
 
-    // Getter untuk akses atribut Board
+    @Override
     public int getWidth() {
         return width;
     }
 
+    @Override
     public int getHeight() {
         return height;
     }
 
+    @Override
     public ITile getTile(int x, int y) {
         return tiles[y][x];
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
-    public ITile[][] getTiles() {
+    @Override
+    public ITile[][] getAllTiles() {
         return tiles;
     }
 }

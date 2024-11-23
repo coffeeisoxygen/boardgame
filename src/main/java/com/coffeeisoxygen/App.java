@@ -1,15 +1,15 @@
 package com.coffeeisoxygen;
 
-import com.coffeeisoxygen.model.board.Board;
 import com.coffeeisoxygen.model.board.BoardBuilder;
 import com.coffeeisoxygen.model.factory.TileFactory;
+import com.coffeeisoxygen.model.interfaces.IBoard;
 
 public class App {
     public static void main(String[] args) {
         TileFactory factory = TileFactory.getInstance();
 
         // Bikin Board Default
-        Board defaultBoard = new BoardBuilder()
+        IBoard defaultBoard = new BoardBuilder()
                 .setSize(15, 15)
                 .setName("My Game Board")
                 .build(factory);
