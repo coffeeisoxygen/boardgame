@@ -1,0 +1,160 @@
+-------------------------------------------------------------------------------
+Test set: com.coffeeisoxygen.model.classes.TileTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! - in com.coffeeisoxygen.model.classes.TileTest
+testGetPosition  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testGetColor  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testSetPositionThrowsExceptionWhenNull  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testToString  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testGetName  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testGetType  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testHashCode  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testEquals  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testSetName  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testSetType  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testSetPosition  Time elapsed: 0 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+
+testSetColor  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+

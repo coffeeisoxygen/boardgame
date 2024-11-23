@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.coffeeisoxygen.model.classes.TileTest" time="0.014" tests="12" errors="12" skipped="0" failures="0">
+  <properties/>
+  <testcase name="testGetPosition" classname="com.coffeeisoxygen.model.classes.TileTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testGetColor" classname="com.coffeeisoxygen.model.classes.TileTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testSetPositionThrowsExceptionWhenNull" classname="com.coffeeisoxygen.model.classes.TileTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testToString" classname="com.coffeeisoxygen.model.classes.TileTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testGetName" classname="com.coffeeisoxygen.model.classes.TileTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testGetType" classname="com.coffeeisoxygen.model.classes.TileTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testHashCode" classname="com.coffeeisoxygen.model.classes.TileTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testEquals" classname="com.coffeeisoxygen.model.classes.TileTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testSetName" classname="com.coffeeisoxygen.model.classes.TileTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testSetType" classname="com.coffeeisoxygen.model.classes.TileTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testSetPosition" classname="com.coffeeisoxygen.model.classes.TileTest" time="0">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+  <testcase name="testSetColor" classname="com.coffeeisoxygen.model.classes.TileTest" time="0.001">
+    <error message="Unresolved compilation problems: &#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	Duplicate method testEquals() in type TileTest&#10;	Syntax error, insert &quot;VariableDeclarators&quot; to complete LocalVariableDeclaration&#10;	Syntax error, insert &quot;;&quot; to complete BlockStatements&#10;	Syntax error, insert &quot;}&quot; to complete MethodBody&#10;	t cannot be resolved&#10;	Duplicate method testEquals() in type TileTest&#10;" type="java.lang.Error"><![CDATA[java.lang.Error: 
+Unresolved compilation problems: 
+	Syntax error, insert "}" to complete MethodBody
+	Duplicate method testEquals() in type TileTest
+	Syntax error, insert "VariableDeclarators" to complete LocalVariableDeclaration
+	Syntax error, insert ";" to complete BlockStatements
+	Syntax error, insert "}" to complete MethodBody
+	t cannot be resolved
+	Duplicate method testEquals() in type TileTest
+
+	at com.coffeeisoxygen.model.classes.TileTest.<init>(TileTest.java:71)
+]]></error>
+  </testcase>
+</testsuite>
